@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# BranchesController
 class BranchesController < ApplicationController
   before_action :set_branch, only: %i[show update destroy]
 
