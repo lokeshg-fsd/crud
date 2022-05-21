@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :task_values
   resources :employees
   resources :branches
   resources :users
