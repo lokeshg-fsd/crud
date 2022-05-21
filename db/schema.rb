@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_220_521_130_646) do # rubocop:disable Metrics/BlockLength
+ActiveRecord::Schema.define(version: 20_220_521_145_649) do
   create_table 'branches', charset: 'utf8mb4', force: :cascade do |t|
     t.string 'name'
     t.string 'address'
@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20_220_521_130_646) do # rubocop:disable Me
     t.string 'last_name'
     t.string 'email'
     t.string 'role'
-    t.string 'type'
+    t.string 'job_type'
     t.bigint 'branches_id', null: false
     t.datetime 'created_at', precision: 6, null: false
     t.datetime 'updated_at', precision: 6, null: false
